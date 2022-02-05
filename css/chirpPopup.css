@@ -1,0 +1,57 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.popupBg{
+	padding: 0;
+	margin: 0;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	margin: 0 auto;
+	background-color: #dddddd40;
+	z-index: 1001;
+}
+.popupContainer *{
+	margin: 0;
+	padding: 0;
+	font-family: "segoe ui";
+	border: 0;
+}
+
+.popupContainer{
+	position: relative;
+	max-width: 605px;
+	padding: 5px;
+	border-radius: 15px;
+	background-color: #1a161c;
+}
+
+.popupHeader{
+	position: relative;
+	height: 45px;
+	line-height: 50px;
+	padding-left: 20px;
+	border-bottom: 1px solid #dddddd;
+}
+
+.popupHeader button{
+	width: 35px;
+	height: 35px;
+	font-size: 24px;
+	border-radius: 50%;
+	color: #a24cc2;
+	background: 0;
+	outline: 0;
+	cursor: pointer;
+	transition: 0.25s;
+}
+
+.popupHeader button:hover{
+	background-color: #4b2b56;
+}
+
+.invisible {
+	display: none;
+}

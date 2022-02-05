@@ -1,0 +1,163 @@
+.searchWrapper, .searchWrapper *{
+	padding: 0;
+	margin: 0;
+	color: white;
+	font-family: "segoe ui";
+	box-sizing: border-box;
+}
+
+.searchWrapper{
+	position: fixed;
+	right: 0;
+	height: 100vh;
+	width: 33vw;
+	max-width: 400px;
+	background-color: #1a161c;
+	text-align: center;
+	border-left: 1px solid #dddddd;
+	z-index: 1002;
+}
+
+.searchBar{
+	width: auto;
+	text-align: center;
+	margin-top: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.searchWrapper i{
+	position: absolute;
+	top: 33%;
+	left: 50px;
+	color: gray;
+}
+
+.searchWrapper #searchInput{
+	position: relative;
+	line-height: 40px;
+	background-color: #2b272d;
+	padding-left: 30px;
+	font-size: 16px;
+	outline: none;
+	border-radius: 20px;
+	width: 80%;
+}
+
+.searchWrapper #searchInput:focus{
+	border: 2px solid #a24cc2;
+	background-color: black;
+}
+
+.searchWrapper #searchInput:focus+i{
+	color: #a24cc2;
+}
+
+
+.notifheader{
+	position: relative;
+	line-height: 40px;
+	text-align: left;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-top: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+}
+
+.notifheader i{
+	position: absolute;
+	left: 90%;
+	transition: 0.25s;
+}
+
+.notifheader i:hover{
+	color: #a24cc2;
+	cursor: pointer;
+}
+
+.notifList{
+	width: 100%;
+	height: calc(100vh - 49px);
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.notifSample{
+	position: relative;
+	background-color: #1a161c;
+	width: 100%;
+	height: auto;
+	padding-left: 10px;
+	padding-top: 10px;
+	border-bottom: 1px solid #dddddd;
+	padding-bottom: 0;
+}
+
+.notifSample:hover{
+	background-color: #2b2230;
+	cursor: pointer;
+}
+
+.uicon{
+	position: absolute;
+	left: 10px;
+	width: 60px;
+	height: 60px;
+	object-fit: cover;
+	border-radius: 100%;
+}
+
+.notifInfo{
+	position: relative;
+	height: auto;
+	width: 100%;
+	margin-left: 60px;
+	margin-right: 10px;
+	text-align: left;
+	padding-left: 5px;
+}
+
+.notifsymbol{
+	position: absolute;
+	top: 8px;
+	right: 20%;
+}
+
+.notifsymbol .fa-heart{
+	color: #ff69b5;
+}
+
+.notifsymbol .fa-comment{
+	color: #a24cc2;
+}
+
+.notifpostBody{
+	position: relative;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 18px;
+	font-weight: 800;
+}
+
+.notifpostBody *, .notifpostBody{
+	color: gray;
+	vertical-align: top;
+}
+
+.notifpostBody textarea{
+	text-align: center;
+	width: 250px;
+	resize: none;
+	border: 0;
+	background: 0;
+	outline: 0;
+	padding-top: 5px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+@media (max-width: 1281px){
+	.searchWrapper{
+		display: none;
+	}
+}

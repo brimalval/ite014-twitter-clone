@@ -1,0 +1,53 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "segoe ui";
+}
+
+.home.headerText{
+	position: fixed;
+	top: 0;
+	left: 300px;
+	background-color: #1a161c;
+	color: white;
+	line-height: 50px;
+	width: 600px;
+	border-bottom: 1px solid #dddddd;
+	border-right: 1px solid #dddddd;
+	z-index: 998;
+}
+
+.home.headerText h3{
+	position: relative;
+	left: 20px;
+	font-weight: 800;
+}
+
+.home.headerSpacer{
+	margin-left: 300px;
+	width: 600px;
+	height: 50px;
+	z-index: 0;
+}
+
+.content{
+	position: relative;
+	left: 300px;
+	padding-top: 50px;
+}
+
+.posts{
+	display: none;
+}
+@media (max-width: 1000px){
+	.home.headerText{
+		left: 100px;
+	}
+	.home.headerSpacer{
+		margin-left: 100px;
+	}
+	.content{
+		left: 100px;
+	}
+}

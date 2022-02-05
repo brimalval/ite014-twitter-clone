@@ -1,0 +1,153 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.navbar{
+	position: fixed;
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 300px;
+	height: 100vh;
+	background-color: #1a161c;
+	font-family: "segoe ui";
+	font-weight: 700;
+	z-index: 999;
+	border-right: 1px solid #dddddd;
+}
+.navbar *{
+	box-sizing: border-box;
+	list-style: none;
+	color: white;
+	text-decoration: none;
+}
+
+.navbar ul{
+	margin: 0;
+	padding: 0;
+	padding-left: 30px;
+	padding-top: 10px;
+}
+
+.navbar a{
+	font-size: 20px;
+	display: inline-block;
+	line-height: 50px;
+	min-width: 50px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	border-radius: 25px;
+	transition: 0.25s;
+}
+
+.navbar a:hover i, .navbar a:hover h7{
+	color: #a24cc2;
+}
+
+.navbar a:hover{
+	background-color: #2d1729;
+}
+
+.navbar img{
+	margin-top: -5px;
+	width: 25px;
+	height: 25px;
+	object-fit: cover;
+	vertical-align: middle;
+	border-radius: 100%;
+	border: 2px solid #a24cc2;
+}
+
+.navbar i, .navbar img{
+	transition: 0.25s;
+	margin-right: 20px;
+}
+
+.navbar #logo, .navbar #logo i{
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+.navbar #logo{
+	margin-bottom: 25px;
+}
+
+.navbar #logo:hover i{
+	color: white;
+}
+
+.navbar #icon{
+	padding-left: 12px;
+}
+
+.navbar #chirp{
+	width: 200px;
+	text-align: center;
+	font-size: 18px;
+	background-color: #a24cc2;
+}
+
+.navbar #chirp i{
+	display: none;
+}
+
+.navbar #chirp:hover, .navbar #chirp:hover i, .navbar #chirp:hover h7{
+	color: white;
+	background-color: #b16acc;
+}
+
+#navSpacer{
+	float: left;
+	width: 300px;
+	height: 100vh;
+	display: inline-block;
+}
+
+@media (max-width: 1000px){
+	.navbar #chirp i{
+		display: inline-block;
+	}
+
+	.navbar a h7{
+		display: none;
+	}
+
+	.navbar i, .navbar img{
+		margin: 0;
+	}
+
+	.navbar #icon{
+		padding: 0;
+	}
+
+	.navbar img{
+		margin-right: 0;
+		padding-right: 0;
+		margin-top: -8px;
+	}
+
+	.navbar #chirp{
+		width: 50px;
+	}
+
+	.navbar{
+		width: 100px;
+	}
+
+	#navSpacer{
+		width: 100px;
+	}
+}
+
+@media (max-height: 550px){
+	.navbar{
+		overflow-y: scroll;
+	}
+}
+
+.activenavlink{
+	color: #a24cc2;
+}

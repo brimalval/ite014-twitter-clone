@@ -1,0 +1,179 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.imagePreviewContainer, .imagePreviewContainer *{
+	margin: 0;
+	padding: 0;
+}
+
+.imagePreviewContainer{
+	position: fixed;
+	float:left;
+	width: 100vw;
+	height: 100vh;
+	background-color: #dddddd40;
+	z-index: 1000;
+	display: none;
+}
+
+.imagePreview{
+	position: absolute;
+	width: 80vw;
+	height: 80vh;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.imagePreview img{
+	object-fit: fill;
+	width: 100%;
+	height: 100%;
+}
+
+.postBody *{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "segoe ui";
+}
+
+.postBody{
+	position: relative;
+	color: white;
+	width: 600px;
+	height: 100%;
+	background-color: #1a161c;
+	padding-right: 55px;
+	border-bottom: 1px solid #dddddd;
+	border-right: 1px solid #dddddd;
+	transition: 0.25s;
+	z-index: 14;
+}
+
+.postBody:hover{
+	background-color: #2b2230;
+	cursor: pointer;
+}
+
+.postBody .posterInfo{
+	position: absolute;
+	left: 70px;
+	top: 10px;
+	color: gray;
+}
+
+.postBody .posterInfo #name{
+	color: white;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.postBody .posterInfo #name:hover{
+	text-decoration: underline;
+}
+
+.postBody #icon{
+	margin-top: 5px;
+	margin-left: 10px;
+	width: 50px;
+	height: 50px;
+	object-fit: cover;
+	border-radius: 100%;
+}
+
+.postBody .contentWrapper{
+	max-width: 475px;
+	height: auto;
+	margin-top: -20px;
+	margin-left: 70px;
+	margin-bottom: 10px;
+}
+
+.postBody textarea{
+	object-fit: cover;
+	width: 100%;
+	color: white;	
+	background: none;
+	outline: 0;
+	position: relative;
+	display: block;
+	resize: none;
+	font-size: 16px;
+	overflow: hidden;
+}
+
+.postBody .imgContent{
+	max-width: 475px;
+	max-height: 475px;
+	margin-left: 70px;
+	margin-bottom: 10px;
+}
+
+.postBody .imgContent img{
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+}
+
+.postBody .imgContent img:hover{
+	cursor: pointer;
+}
+
+.commentslikes{
+	margin-left: 70px;
+	margin-bottom: 5px;
+	max-width: 475px;
+}
+
+.commentslikes label{
+	margin: 0;
+	padding: 0;
+	transition: 0.25s;
+}
+
+.commentslikes i{
+	font-size: 18px;
+	width: 30px;
+	line-height: 30px;
+	text-align:center;
+	border-radius: 100%;
+}
+
+.commentslikes #comments:hover{
+	color: #a24cc2;
+	cursor: pointer;
+}
+
+.commentslikes #comments:hover>i{
+	background-color: #4b2b56;
+}
+
+.commentslikes #likes:hover{
+	color: #ff69b5;
+	cursor: pointer;
+}
+
+.commentslikes #likes:hover>i{
+	background-color: #874365;
+}
+
+.commentslikes button{
+	display: none;
+}
+
+#commentSpan, #heartSpan{
+	width: 33%;
+	display: inline-block;
+}
+
+@media (max-width: 700px){
+	.postBody{
+		width: calc(100% - 100px);
+	}
+}
